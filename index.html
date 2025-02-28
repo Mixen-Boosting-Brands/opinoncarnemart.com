@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>¡Tus comentarios son importantes! 💬✨ Carnemart</title>
+        <link
+            rel="icon"
+            type="image/png"
+            href="./favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+        <link rel="shortcut icon" href="./favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./apple-touch-icon.png"
+        />
+        <meta name="apple-mobile-web-app-title" content="Carnemart" />
+        <link rel="manifest" href="./site.webmanifest" />
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+                padding: 20px;
+                font-family:
+                    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            }
+
+            .container {
+                width: 100%;
+                max-width: 800px; /* Adjust this based on your form width */
+                margin: 20px auto;
+            }
+
+            .form-wrapper {
+                background: white;
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            }
+
+            h1 {
+                text-align: center;
+                color: #333;
+                margin-bottom: 30px;
+                font-size: 2em;
+            }
+
+            .iframe-container {
+                position: relative;
+                width: 100%;
+                min-height: 1000px;
+            }
+
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <iframe
+                id="JotFormIFrame"
+                src="https://www.jotform.com/250586344661057?appEmbedded=1&jotform_pwa=1&pwa_id=250585855391871&pwa_device=desktop&pwa_isPWA=false&pwa_app_path=%252Fapp&hideAccountBox=1&no-form-toolbar=true&form_id=250586231139860"
+                allowtransparency="true"
+                allowfullscreen="true"
+                allow="geolocation; microphone; camera"
+                frameborder="0"
+                scrolling="no"
+            >
+            </iframe>
+        </div>
+    </body>
+</html>
